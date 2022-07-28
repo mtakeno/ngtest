@@ -1,0 +1,528 @@
+{
+  "dimensions": {
+    "x": [
+      4e-9,
+      "m"
+    ],
+    "y": [
+      4e-9,
+      "m"
+    ],
+    "z": [
+      4e-8,
+      "m"
+    ]
+  },
+  "position": [
+    161704.46875,
+    85045.53125,
+    25458.5
+  ],
+  "crossSectionScale": 6.8305867783299,
+  "projectionOrientation": [
+    -0.200058713555336,
+    0.1718207448720932,
+    0.01861918903887272,
+    0.9644207954406738
+  ],
+  "projectionScale": 47147.954135906126,
+  "layers": [
+    {
+      "type": "image",
+      "source": {
+        "url": "precomputed://https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie65/em",
+        "subsources": {
+          "default": true
+        },
+        "enableDefaultSubsources": false
+      },
+      "tab": "rendering",
+      "shaderControls": {
+        "normalized": {
+          "range": [
+            86,
+            172
+          ]
+        }
+      },
+      "name": "img65"
+    },
+    {
+      "type": "image",
+      "source": {
+        "url": "precomputed://https://bossdb-open-data.s3.amazonaws.com/iarpa_microns/minnie/minnie35/em",
+        "subsources": {
+          "default": true
+        },
+        "enableDefaultSubsources": false
+      },
+      "tab": "rendering",
+      "shaderControls": {
+        "normalized": {
+          "range": [
+            112,
+            172
+          ]
+        }
+      },
+      "name": "img35",
+      "visible": false
+    },
+    {
+      "type": "segmentation",
+      "source": "precomputed://gs://iarpa_microns/minnie/minnie65/seg",
+      "tab": "rendering",
+      "annotationColor": "#8f8f8a",
+      "selectedAlpha": 0.42,
+      "segments": [
+        "864691136534887842"
+      ],
+      "segmentQuery": "864691135269913253, 864691135293126156, 864691135303399847, 864691135307240262, 864691135358985048, 864691135367308281, 864691135386593409, 864691135428608048, 864691135446864980, 864691135463706181, 864691135544579880, 864691135560721377, 864691135590150923, 864691135644850415, 864691135697462549, 864691135700443515, 864691135748826153, 864691135754758610, 864691135785592772, 864691135937286404, 864691135946888545, 864691136812081779, 864691136951664863, 864691136952074207",
+      "colorSeed": 1689220695,
+      "name": "seg65"
+    },
+    {
+      "type": "segmentation",
+      "source": "precomputed://gs://iarpa_microns/minnie/minnie35/seg",
+      "tab": "segments",
+      "annotationColor": "#8a8a8a",
+      "segments": [
+        "864691137827278437",
+        "864691138020403235",
+        "864691138081021535",
+        "864691138134948293",
+        "864691138142870469",
+        "864691138153699060",
+        "864691138178964470",
+        "864691138345166401"
+      ],
+      "name": "seg35",
+      "visible": false
+    },
+    {
+      "type": "annotation",
+      "source": {
+        "url": "local://annotations",
+        "transform": {
+          "outputDimensions": {
+            "x": [
+              4e-9,
+              "m"
+            ],
+            "y": [
+              4e-9,
+              "m"
+            ],
+            "z": [
+              4e-8,
+              "m"
+            ]
+          }
+        }
+      },
+      "tool": "annotatePoint",
+      "tab": "annotations",
+      "annotationColor": "#ff0000",
+      "annotations": [
+        {
+          "point": [
+            74643.765625,
+            98122.1640625,
+            19972.5
+          ],
+          "type": "point",
+          "id": "8881a9d02569a122c5b39e759cf1e2d4f5f2701e"
+        },
+        {
+          "point": [
+            179810.1875,
+            92647.9453125,
+            19368.5
+          ],
+          "type": "point",
+          "id": "174a3bd8e8bdab7c8793a2e99b20701f78b443b4"
+        },
+        {
+          "point": [
+            108281.6640625,
+            86196.046875,
+            23491.501953125
+          ],
+          "type": "point",
+          "id": "94ae88d5d6bb921cee9ff956455c668f11fb4186"
+        },
+        {
+          "point": [
+            201978.578125,
+            82707.3359375,
+            24442.5
+          ],
+          "type": "point",
+          "id": "0a45f03b04bfa159e3f7d1fd64cf36609356cabb"
+        },
+        {
+          "point": [
+            363456.25,
+            76726.6796875,
+            24733.5
+          ],
+          "type": "point",
+          "id": "d352cf8791e00fdea59cfe216265a223552bb9ae"
+        },
+        {
+          "point": [
+            380899.84375,
+            85697.65625,
+            27677.5
+          ],
+          "type": "point",
+          "id": "d46f3d0059491ef4ed997b9829c13de62d880921"
+        },
+        {
+          "point": [
+            224670.28125,
+            87784.4765625,
+            18027.5
+          ],
+          "type": "point",
+          "id": "37ea67c2d69535b530b755108b2a527acde6e0a1"
+        },
+        {
+          "point": [
+            290364.5,
+            82260.15625,
+            15457.5
+          ],
+          "type": "point",
+          "id": "5be236acd54fc346464390e1e59f5a1656645761"
+        },
+        {
+          "point": [
+            232976.625,
+            85553.15625,
+            15724.5
+          ],
+          "type": "point",
+          "id": "c8ef3c6b6454f555d65615bc53e482068751e18f"
+        },
+        {
+          "point": [
+            206697.28125,
+            87749.4296875,
+            15319.5
+          ],
+          "type": "point",
+          "id": "587fc51822c9212b5d3b650ae1b9cef653d4761b"
+        },
+        {
+          "point": [
+            316434.59375,
+            87630.1796875,
+            16513.501953125
+          ],
+          "type": "point",
+          "id": "602c8d9c324e275e7960e7125f837e7cd80ade26"
+        },
+        {
+          "point": [
+            152014.296875,
+            84663.359375,
+            23749.5
+          ],
+          "type": "point",
+          "id": "8619dd274c34c9ca1a7a01542a5284b71b88107a"
+        },
+        {
+          "point": [
+            207642.34375,
+            84843.65625,
+            15279.5
+          ],
+          "type": "point",
+          "id": "6cc2e99177716b5820d6df8ed1a53a9ec222dda2"
+        },
+        {
+          "point": [
+            160918.953125,
+            83409.609375,
+            25458.498046875
+          ],
+          "type": "point",
+          "id": "d855cd96bfb492942c4a6a80179c63a3d6cdb14e"
+        }
+      ],
+      "name": "Arterioles"
+    },
+    {
+      "type": "annotation",
+      "source": {
+        "url": "local://annotations",
+        "transform": {
+          "outputDimensions": {
+            "x": [
+              4e-9,
+              "m"
+            ],
+            "y": [
+              4e-9,
+              "m"
+            ],
+            "z": [
+              4e-8,
+              "m"
+            ]
+          }
+        }
+      },
+      "tool": "annotatePoint",
+      "tab": "annotations",
+      "annotationColor": "#00fbff",
+      "annotations": [
+        {
+          "point": [
+            131421.890625,
+            92809.6171875,
+            19491.498046875
+          ],
+          "type": "point",
+          "id": "ae69b231b735c7f80514e71de340a5095b49b532"
+        },
+        {
+          "point": [
+            90415.453125,
+            95797.9140625,
+            19491.5
+          ],
+          "type": "point",
+          "id": "e95bb99876379fc8e287db82b7bdef7376381b24"
+        },
+        {
+          "point": [
+            301915.21875,
+            82181.796875,
+            19466.5
+          ],
+          "type": "point",
+          "id": "3bca4dbaeb513ed4a733ea5ebe4c064ebafc1a30"
+        },
+        {
+          "point": [
+            190829.15625,
+            86941.6953125,
+            21005.5
+          ],
+          "type": "point",
+          "id": "8df340e058aea8c14e4314a0ff693e465c415923"
+        },
+        {
+          "point": [
+            396349.84375,
+            87192.8203125,
+            22975.5
+          ],
+          "type": "point",
+          "id": "e58feaa8526dd2fe53fbcd83cfd9e3b824724f48"
+        },
+        {
+          "point": [
+            263778.6875,
+            79218.609375,
+            24238.5
+          ],
+          "type": "point",
+          "id": "90c34a12a20b5425c65791f5ec3e876139bd25f8"
+        },
+        {
+          "point": [
+            126722.0234375,
+            88687.984375,
+            26748.5
+          ],
+          "type": "point",
+          "id": "00174259ff815ef4930296117464346ce1cab0e7"
+        },
+        {
+          "point": [
+            362723.71875,
+            85790.921875,
+            19042.5
+          ],
+          "type": "point",
+          "id": "e2ad899d04ca350ae923118fcc453409ae9a8b1f"
+        },
+        {
+          "point": [
+            189783.125,
+            89778.03125,
+            17784.5
+          ],
+          "type": "point",
+          "id": "73c063e34261af4bcd967cc84a25e6a8c69f7939"
+        },
+        {
+          "point": [
+            345280.125,
+            82800.59375,
+            15622.5
+          ],
+          "type": "point",
+          "id": "2d5f484f9a986eb27555cb01a6fbc04ea8083f24"
+        },
+        {
+          "point": [
+            96894.2265625,
+            98181.265625,
+            16154.5
+          ],
+          "type": "point",
+          "id": "f9a7a0a9e4042ef2c7b5bd4a06b13685fb58c264"
+        },
+        {
+          "point": [
+            254602.15625,
+            81920.8984375,
+            20696.5
+          ],
+          "type": "point",
+          "id": "ec9209ac1f6e74292c0813d4b69ef7f906da8e15"
+        },
+        {
+          "point": [
+            328329,
+            80275.046875,
+            20658.501953125
+          ],
+          "type": "point",
+          "id": "99a61dff55283267cef78fecd332a5a1be405ecf"
+        },
+        {
+          "point": [
+            210551.203125,
+            87752.6875,
+            21229.498046875
+          ],
+          "type": "point",
+          "id": "a4a0755fd693ed41960f7b16b1d327e67dc05377"
+        },
+        {
+          "point": [
+            276776.65625,
+            87145.125,
+            21167.501953125
+          ],
+          "type": "point",
+          "id": "899d9888d6d1a39d7d744e04debf6ba2c9de2bf4"
+        },
+        {
+          "point": [
+            96631.671875,
+            96331.3125,
+            22720.5
+          ],
+          "type": "point",
+          "id": "0783fc5a882751291e0f869bc5ff7b9957dc1993"
+        },
+        {
+          "point": [
+            227438.109375,
+            76365.1015625,
+            23685.5
+          ],
+          "type": "point",
+          "id": "dd7dc6d172d28845cd66ea0624329b6c2828e00d"
+        },
+        {
+          "point": [
+            293394.65625,
+            73395.1640625,
+            23399.5
+          ],
+          "type": "point",
+          "id": "5c79559e4713152f6895eab392124474d7f46356"
+        },
+        {
+          "point": [
+            374076.34375,
+            77699.921875,
+            23215.498046875
+          ],
+          "type": "point",
+          "id": "3b9534bdff3613355b730631b7cf33a6e410ccce"
+        },
+        {
+          "point": [
+            143065.9375,
+            84331.6328125,
+            27445.5
+          ],
+          "type": "point",
+          "id": "17534d52991532e9ada7b5ee982b8cbc2b728344"
+        },
+        {
+          "point": [
+            167882.6875,
+            90701.359375,
+            17508.498046875
+          ],
+          "type": "point",
+          "id": "05d089648204d33e5009588ac0ee4e472108a71b"
+        },
+        {
+          "point": [
+            154002.859375,
+            90887.8125,
+            17480.501953125
+          ],
+          "type": "point",
+          "id": "b030585724a0e25c30861243308e4372ed453d40"
+        },
+        {
+          "point": [
+            82622.3203125,
+            102066.59375,
+            15631.5009765625
+          ],
+          "type": "point",
+          "id": "9590ec64ff6d2b1f4013a71d4edfb42f69ee960e"
+        },
+        {
+          "point": [
+            112950.9140625,
+            95434.8046875,
+            15168.5
+          ],
+          "type": "point",
+          "id": "8bc47aa50fdf3f68a61cfa38d06fdab6d88a76dd"
+        },
+        {
+          "point": [
+            263920.3125,
+            84519.828125,
+            14827.4990234375
+          ],
+          "type": "point",
+          "id": "5f3f76cc6c69ca01d81f8a8f3674865ea4a012c4"
+        }
+      ],
+      "name": "Venules"
+    }
+  ],
+  "showSlices": false,
+  "selectedLayer": {
+    "visible": true,
+    "layer": "Arterioles"
+  },
+  "layout": {
+    "type": "xy-3d",
+    "orthographicProjection": true
+  },
+  "selection": {
+    "layers": {
+      "Arterioles": {
+        "annotationId": "d855cd96bfb492942c4a6a80179c63a3d6cdb14e",
+        "annotationSource": 0,
+        "annotationSubsource": "default"
+      }
+    }
+  }
+}
