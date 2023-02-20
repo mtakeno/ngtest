@@ -1,2 +1,2 @@
 # ngtest
-testing ng json reads
+testing neuroglancer json reads from a github document link, for link sharing purposes
