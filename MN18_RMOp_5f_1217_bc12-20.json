@@ -1,0 +1,39 @@
+{
+  "dimensions": {
+    "x": [
+      1e-9,
+      "m"
+    ],
+    "y": [
+      1e-9,
+      "m"
+    ],
+    "z": [
+      1e-9,
+      "m"
+    ]
+  },
+  "position": [
+    364707.5,
+    171467,
+    17.5
+  ],
+  "crossSectionScale": 0.34460046735783334,
+  "projectionScale": 524288,
+  "layers": [
+    {
+      "type": "image",
+      "source": {
+        "url": "render://http://em-131db2.corp.alleninstitute.org:8888/imaging_team/MN18_RMOp_5f/20240725T023107_MN18_RMOp_5f_ingest/?minX=-100000.0&minY=-50000.0&maxX=829415.0&maxY=392934.0&minZ=14.0&maxZ=21.0"
+      },
+      "tab": "source",
+      "blend": "default",
+      "name": "20240725T023107_MN18_RMOp_5f_ingest"
+    }
+  ],
+  "selectedLayer": {
+    "layer": "20240725T023107_MN18_RMOp_5f_ingest",
+    "visible": true
+  },
+  "layout": "xy"
+}
