@@ -1,0 +1,94 @@
+{
+  "layers": [
+    {
+      "source": "graphene://https://api.em.brain.allentech.org/proxy/v1dd/image/aligned_image",
+      "type": "image",
+      "blend": "default",
+      "shader": "#uicontrol float black slider(min=0, max=1, default=0.0)\n#uicontrol float white slider(min=0, max=1, default=1.0)\nfloat rescale(float value) {\n  return (value - black) / (white - black);\n}\nvoid main() {\n  float val = toNormalized(getDataValue());\n  if (val < black) {\n    emitRGB(vec3(0,0,0));\n  } else if (val > white) {\n    emitRGB(vec3(1.0, 1.0, 1.0));\n  } else {\n    emitGrayscale(rescale(val));\n  }\n}\n",
+      "shaderControls": {
+        "black": 0.41,
+        "white": 0.59
+      },
+      "name": "img"
+    },
+    {
+      "source": "graphene://https://api.em.brain.allentech.org/segmentation/table/aibs_v1dd",
+      "type": "segmentation_with_graph",
+      "selectedAlpha": 0.3,
+      "segments": [
+        "864691132444535046"
+      ],
+      "skeletonRendering": {
+        "mode2d": "lines_and_points",
+        "mode3d": "lines"
+      },
+      "graphOperationMarker": [
+        {
+          "annotations": [],
+          "tags": []
+        },
+        {
+          "annotations": [],
+          "tags": []
+        }
+      ],
+      "pathFinder": {
+        "color": "#ffff00",
+        "pathObject": {
+          "annotationPath": {
+            "annotations": [],
+            "tags": []
+          },
+          "hasPath": false
+        }
+      },
+      "name": "seg",
+      "visible": false
+    },
+    {
+      "type": "annotation",
+      "annotations": [],
+      "annotationTags": [],
+      "voxelSize": [
+        9,
+        9,
+        45
+      ],
+      "bracketShortcutsShowSegmentation": true,
+      "annotationSelectionShowsSegmentation": true,
+      "name": "ann"
+    }
+  ],
+  "navigation": {
+    "pose": {
+      "position": {
+        "voxelSize": [
+          9,
+          9,
+          45
+        ],
+        "voxelCoordinates": [
+          92757.1875,
+          35780.35546875,
+          5540.978515625
+        ]
+      },
+      "orientation": [
+        -0.9553365111351013,
+        0,
+        0.29552021622657776,
+        0
+      ]
+    },
+    "zoomFactor": 2119.3889253563084
+  },
+  "perspectiveZoom": 2000,
+  "showSlices": false,
+  "systemMemoryLimit": 5000000000,
+  "jsonStateServer": "https://global.em.brain.allentech.org/nglstate/api/v1/post",
+  "selectedLayer": {
+    "layer": "img",
+    "visible": true
+  },
+  "layout": "4panel"
+}
